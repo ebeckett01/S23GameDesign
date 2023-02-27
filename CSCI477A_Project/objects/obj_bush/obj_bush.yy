@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite3",
-    "path": "sprites/Sprite3/Sprite3.yy",
+    "name": "spr_bush",
+    "path": "sprites/spr_bush/spr_bush.yy",
   },
   "spriteMaskId": null,
   "visible": true,

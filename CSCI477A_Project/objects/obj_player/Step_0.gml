@@ -27,22 +27,31 @@ if (place_meeting(x + hsp, y, obj_platform)) {
 x += hsp;
 //jumping and vertical speed
 vsp += grv;
-
-//check vertical collision with a block
-if (place_meeting(x, y + vsp, obj_platform)) {
-	//going to hit a block with feet in next frame
-	while( !place_meeting(x, y+ sign(vsp), obj_platform)) {
-		y += sign(vsp);
-	}
-	vsp = 0;
-	on_platform = true;
-} else {
-	on_platform = false;
-}
 //jumping
 if (on_platform && jumping){
 	vsp -= jspd;
 	on_platform = false;   
+}
+//check vertical collision with a block
+var inst = instance_place(x, y+ vsp, obj_platform);
+if (inst != noone) {
+	//going to hit a block with feet in next frame
+	
+	while( instance_place(x, y+ sign(vsp), obj_platform) == noone) {
+		y += sign(vsp);
+	}
+	inst = instance_place(x, y+ sign(vsp), obj_platform);
+	vsp = 0;
+	if(y < inst.y){
+		on_platform = true;
+	} else {
+	on_platform = false;
+	}
+}
+if(on_platform){
+	sprite_index = spr_grounded_player;
+}else {
+	sprite_index = spr_temp_player;
 }
 //hiding logic
 if (place_meeting(x, y+1, obj_hideable)) {

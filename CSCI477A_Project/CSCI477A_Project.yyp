@@ -33,6 +33,7 @@
   },
   "resources": [
     {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},"order":3,},
+    {"id":{"name":"spr_grounded_player","path":"sprites/spr_grounded_player/spr_grounded_player.yy",},"order":4,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_temp_player","path":"sprites/spr_temp_player/spr_temp_player.yy",},"order":0,},
     {"id":{"name":"spr_temp_platform","path":"sprites/spr_temp_platform/spr_temp_platform.yy",},"order":1,},
@@ -41,7 +42,7 @@
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"order":1,},
     {"id":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"order":6,},
     {"id":{"name":"obj_temp_platform","path":"objects/obj_temp_platform/obj_temp_platform.yy",},"order":4,},
-    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":2,},
+    {"id":{"name":"spr_bush","path":"sprites/spr_bush/spr_bush.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "RoomOrderNodes": [

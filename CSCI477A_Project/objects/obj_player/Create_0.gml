@@ -8,7 +8,7 @@ on_platform = false;
 
 // Jump values
 
-jspd = 10;
+jspd = 15;
 jumping = false;
 
 //Directional values
