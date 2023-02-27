@@ -3,12 +3,13 @@
 spd =4;
 
 // Gravity/falling values
-grav = 4
+grv = 0.5
 on_platform = false;
 
 // Jump values
 
-jump = 1;
+jspd = 10;
+jumping = false;
 
 //Directional values
 hsp =0;
