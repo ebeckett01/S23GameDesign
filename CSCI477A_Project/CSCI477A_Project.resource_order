@@ -16,6 +16,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_bush","order":5,"path":"sprites/spr_bush/spr_bush.yy",},
     {"name":"obj_game_controller","order":3,"path":"objects/obj_game_controller/obj_game_controller.yy",},
     {"name":"spr_grounded_player","order":4,"path":"sprites/spr_grounded_player/spr_grounded_player.yy",},
     {"name":"spr_temp_platform","order":1,"path":"sprites/spr_temp_platform/spr_temp_platform.yy",},
@@ -24,6 +25,5 @@
     {"name":"obj_platform","order":1,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"obj_bush","order":6,"path":"objects/obj_bush/obj_bush.yy",},
     {"name":"obj_temp_platform","order":4,"path":"objects/obj_temp_platform/obj_temp_platform.yy",},
-    {"name":"spr_bush","order":2,"path":"sprites/spr_bush/spr_bush.yy",},
   ],
 }
