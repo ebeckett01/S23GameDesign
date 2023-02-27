@@ -15,3 +15,5 @@ jumping = false;
 hsp =0;
 vsp =0;
 
+//hiding
+hiding = false;

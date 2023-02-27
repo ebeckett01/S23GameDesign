@@ -45,6 +45,20 @@ if (on_platform && jumping){
 	on_platform = false;   
 }
 //hiding logic
+if (place_meeting(x, y+1, obj_hideable)) {
+	if (keydown) {
+		hiding = true;
+	} else{
+		hiding = false;
+	}
+}else { 
+	hiding = false;
+}
 
+if(hiding){
+	depth = 1;
+}else{
+	depth =-1;
+}
 
 y += vsp;
