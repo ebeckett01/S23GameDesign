@@ -1,16 +1,35 @@
 /// @Player specific movement
 // Key pressed variables
-var keyleft = keyboard_check(vk_left);
-var keyright = keyboard_check(vk_right);
-var keyup = keyboard_check(vk_up);
-var keydown = keyboard_check(vk_down);
-var jumping = keyboard_check(vk_space);
+var keyleft;
+var keyright;
+var keydown;
+var jumping;
+// Determines whether to use wasd or <^>
+if(!global.wasd){
+	keyleft = keyboard_check(vk_left);
+	keyright = keyboard_check(vk_right);
+	jumping = keyboard_check(vk_up);
+	keydown = keyboard_check(vk_down);
+}else{
+	keyleft = keyboard_check(ord("A"));
+	keyright = keyboard_check(ord("D"));
+	jumping = keyboard_check(ord("W"));
+	keydown = keyboard_check(ord("S"));
+}
+
+// Non-changing key binds
+var attack = keyboard_check(vk_space);
+var dash_key =keyboard_check(vk_shift);
 
 // Movement variables
 var move = keyright-keyleft;
 
 // Set horizontal movement value
-hsp = move*spd;
+if(!dash_key){
+	hsp = move*spd;
+}else{
+	hsp = 2*move*spd;
+}
 
 
 // Collision logic
@@ -24,7 +43,6 @@ if (place_meeting(x + hsp, y, obj_platform)) {
 	hsp = 0;
 }
 
-x += hsp;
 //jumping and vertical speed
 vsp += grv;
 //jumping
@@ -70,4 +88,6 @@ if(hiding){
 	depth =-1;
 }
 
+// Move player according to vsp and hsp
 y += vsp;
+x += hsp;

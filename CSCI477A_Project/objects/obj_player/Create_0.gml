@@ -17,3 +17,6 @@ vsp =0;
 
 //hiding
 hiding = false;
+
+//control values for user input
+global.wasd = true;
