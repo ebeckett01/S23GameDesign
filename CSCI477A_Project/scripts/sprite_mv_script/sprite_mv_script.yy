@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "player_move_script",
+  "name": "sprite_mv_script",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

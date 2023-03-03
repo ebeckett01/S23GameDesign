@@ -87,7 +87,7 @@ var idle_sprite = spr_temp_player_idle;
 var ground_sprite = spr_grounded_player;
 var mvn_sprite = spr_temp_player_mv;
 //Determine player movement animation
-player_move_script(idle_sprite,mvn_sprite,ground_sprite,move,hsp!=0,on_platform);
+sprite_mv_script(idle_sprite,mvn_sprite,ground_sprite,move,hsp!=0,on_platform);
 
 // Move player according to vsp and hsp
 y += vsp;
