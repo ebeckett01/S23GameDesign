@@ -5,9 +5,11 @@
   "resources": [
     {"id":{"name":"spr_bush","path":"sprites/spr_bush/spr_bush.yy",},"order":5,},
     {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},"order":3,},
+    {"id":{"name":"spr_temp_player_mv","path":"sprites/spr_temp_player_mv/spr_temp_player_mv.yy",},"order":6,},
+    {"id":{"name":"player_move_script","path":"scripts/player_move_script/player_move_script.yy",},"order":0,},
     {"id":{"name":"spr_grounded_player","path":"sprites/spr_grounded_player/spr_grounded_player.yy",},"order":4,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
-    {"id":{"name":"spr_temp_player","path":"sprites/spr_temp_player/spr_temp_player.yy",},"order":0,},
+    {"id":{"name":"spr_temp_player_idle","path":"sprites/spr_temp_player_idle/spr_temp_player_idle.yy",},"order":0,},
     {"id":{"name":"spr_temp_platform","path":"sprites/spr_temp_platform/spr_temp_platform.yy",},"order":1,},
     {"id":{"name":"rm_test_level_1","path":"rooms/rm_test_level_1/rm_test_level_1.yy",},"order":1,},
     {"id":{"name":"obj_hideable","path":"objects/obj_hideable/obj_hideable.yy",},"order":5,},
@@ -17,7 +19,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
-    {"name":"macOS","path":"options/mac/options_mac.yy",},
+    {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
   ],
