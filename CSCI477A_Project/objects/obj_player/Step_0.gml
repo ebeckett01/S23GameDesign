@@ -8,12 +8,12 @@ var jumping;
 if(!global.wasd){
 	keyleft = keyboard_check(vk_left);
 	keyright = keyboard_check(vk_right);
-	jumping = keyboard_check(vk_up);
+	jumping = keyboard_check_pressed(vk_up);
 	keydown = keyboard_check(vk_down);
 }else{
 	keyleft = keyboard_check(ord("A"));
 	keyright = keyboard_check(ord("D"));
-	jumping = keyboard_check(ord("W"));
+	jumping = keyboard_check_pressed(ord("W"));
 	keydown = keyboard_check(ord("S"));
 }
 
@@ -47,8 +47,11 @@ if (place_meeting(x + hsp, y, obj_platform)) {
 vsp += grv;
 //jumping
 if (on_platform && jumping){
-	vsp -= jspd;
+	alarm[0] = room_speed/40;
 	on_platform = false;   
+}else if(doubleJump && jumping){
+	alarm[0] = room_speed/40;
+	doubleJump= false;
 }
 //check vertical collision with a block
 var inst = instance_place(x, y+ vsp, obj_platform);
@@ -62,6 +65,7 @@ if (inst != noone) {
 	vsp = 0;
 	if(y < inst.y){
 		on_platform = true;
+		doubleJump = true;
 	} else {
 		on_platform = false;
 	}
