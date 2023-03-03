@@ -24,7 +24,7 @@ var dash_key =keyboard_check(vk_shift);
 // Movement variables
 var move = keyright-keyleft;
 
-// Set horizontal movement value
+// Set initial horizontal movement value
 if(!dash_key){
 	hsp = move*spd;
 }else{
@@ -63,31 +63,23 @@ if (inst != noone) {
 	if(y < inst.y){
 		on_platform = true;
 	} else {
-	on_platform = false;
+		on_platform = false;
 	}
 }
 //hiding logic
-if (place_meeting(x, y+1, obj_hideable)) {
-	if (keydown) {
-		hiding = true;
-	} else{
-		hiding = false;
-	}
-}else { 
-	hiding = false;
-}
-
-if(hiding){
-	depth = 1;
+hiding = false;
+if (place_meeting(x, y+1, obj_hideable)&&keydown) {
+	hiding = true;
+	depth =1;
 }else{
-	depth =-1;
+	depth = -1;	
 }
 // Sprite variables
 var idle_sprite = spr_temp_player_idle;
 var ground_sprite = spr_grounded_player;
 var mvn_sprite = spr_temp_player_mv;
 //Determine player movement animation
-sprite_mv_script(idle_sprite,mvn_sprite,ground_sprite,move,hsp!=0,on_platform);
+sprite_mv_script(self,idle_sprite,mvn_sprite,ground_sprite,move,hsp!=0,on_platform);
 
 // Move player according to vsp and hsp
 y += vsp;
