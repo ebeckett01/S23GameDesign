@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 player_dir = point_direction(x,y,obj_player.x,obj_player.y)
-if (((player_dir+360+90*dir) mod 360) < 180) {
+if (((player_dir+360+90*dir) mod 360) < 180 && !obj_player.hiding) {
 	if (collision_line(x,y,obj_player.x,obj_player.y, obj_platform, 1, 0)) {
 		attention = false;
 	}else{
