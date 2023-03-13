@@ -7,7 +7,7 @@ grv = 0.5
 on_platform = false;
 
 // Jump values
-jspd = 15;
+jspd = 10;
 jumping = false;
 doubleJump = false;
 
