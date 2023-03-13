@@ -81,10 +81,10 @@ if(global.game_state == game_states.PLAYING){
 	}
 	// Sprite variables
 	var idle_sprite = spr_temp_player_idle;
-	var ground_sprite = spr_grounded_player;
+	var ground_sprite = spr_temp_player_grounded;
 	var mvn_sprite = spr_temp_player_mv;
 	//Determine player movement animation
-	sprite_mv_script(self,idle_sprite,mvn_sprite,ground_sprite,move,hsp!=0,on_platform);
+	sprite_mv_script(self,idle_sprite,mvn_sprite,move,hsp!=0);
 
 	// Move player according to vsp and hsp
 	y += vsp;
