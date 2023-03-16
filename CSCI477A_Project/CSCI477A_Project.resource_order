@@ -16,6 +16,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_splash_screen","order":12,"path":"sprites/spr_splash_screen/spr_splash_screen.yy",},
     {"name":"spr_temp_enemy_attention","order":11,"path":"sprites/spr_temp_enemy_attention/spr_temp_enemy_attention.yy",},
     {"name":"spr_bush","order":5,"path":"sprites/spr_bush/spr_bush.yy",},
     {"name":"spr_platform_brick","order":7,"path":"sprites/spr_platform_brick/spr_platform_brick.yy",},
@@ -26,9 +27,11 @@
     {"name":"rm_test_level_1","order":1,"path":"rooms/rm_test_level_1/rm_test_level_1.yy",},
     {"name":"obj_hideable","order":5,"path":"objects/obj_hideable/obj_hideable.yy",},
     {"name":"spr_temp_player_grounded","order":8,"path":"sprites/spr_temp_player_grounded/spr_temp_player_grounded.yy",},
+    {"name":"rm_title_screen","order":2,"path":"rooms/rm_title_screen/rm_title_screen.yy",},
     {"name":"obj_platform","order":1,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"spr_temp_enemy","order":10,"path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",},
     {"name":"obj_hideable_bush","order":6,"path":"objects/obj_hideable_bush/obj_hideable_bush.yy",},
+    {"name":"obj_splash_screen_controller","order":8,"path":"objects/obj_splash_screen_controller/obj_splash_screen_controller.yy",},
     {"name":"obj_platform_brick","order":4,"path":"objects/obj_platform_brick/obj_platform_brick.yy",},
   ],
 }
