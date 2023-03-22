@@ -15,7 +15,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"fnt_title_screen","path":"fonts/fnt_title_screen/fnt_title_screen.yy",},"order":0,},
     {"id":{"name":"spr_temp_player_idle","path":"sprites/spr_temp_player_idle/spr_temp_player_idle.yy",},"order":0,},
-    {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},"order":1,},
+    {"id":{"name":"spr_square","path":"sprites/spr_square/spr_square.yy",},"order":1,},
     {"id":{"name":"rm_test_level_1","path":"rooms/rm_test_level_1/rm_test_level_1.yy",},"order":1,},
     {"id":{"name":"obj_hideable","path":"objects/obj_hideable/obj_hideable.yy",},"order":5,},
     {"id":{"name":"spr_temp_player_grounded","path":"sprites/spr_temp_player_grounded/spr_temp_player_grounded.yy",},"order":8,},
