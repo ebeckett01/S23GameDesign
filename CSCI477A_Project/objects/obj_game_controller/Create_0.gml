@@ -4,3 +4,4 @@ enum game_states{
 	PAUSED
 };
 global.game_state = game_states.PLAYING;
+paused_surf =-1;

@@ -12,6 +12,7 @@
     {"id":{"name":"spr_temp_player_mv","path":"sprites/spr_temp_player_mv/spr_temp_player_mv.yy",},"order":6,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"sprite_mv_script","path":"scripts/sprite_mv_script/sprite_mv_script.yy",},"order":0,},
+    {"id":{"name":"spr_checkmark","path":"sprites/spr_checkmark/spr_checkmark.yy",},"order":14,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"fnt_title_screen","path":"fonts/fnt_title_screen/fnt_title_screen.yy",},"order":0,},
     {"id":{"name":"spr_temp_player_idle","path":"sprites/spr_temp_player_idle/spr_temp_player_idle.yy",},"order":0,},
