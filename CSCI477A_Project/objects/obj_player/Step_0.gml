@@ -80,9 +80,8 @@ if(global.game_state == game_states.PLAYING){
 		depth = -1;	
 	}
 	// Sprite variables
-	var idle_sprite = spr_temp_player_idle;
-	var ground_sprite = spr_temp_player_grounded;
-	var mvn_sprite = spr_temp_player_mv;
+	var idle_sprite = spr_player_idle;
+	var mvn_sprite = spr_player_mv;
 	//Determine player movement animation
 	sprite_mv_script(self,idle_sprite,mvn_sprite,move,hsp!=0);
 
