@@ -34,8 +34,11 @@ if (global.game_state == game_states.COMBAT){
 	draw_sprite_ext(spr_player_idle, 1, 300, 450, 3.5, 3.5, 0, c_white, 1);
 	draw_sprite_ext(spr_temp_enemy, 1, 1050, 350 , -3.5, 3.5, 0, c_white, 1);
 	// Menu bar along the top and bottom
-	draw_set_halign(fa_center);
 	draw_rectangle_colour(0, 0, room_width, 150, c_grey, c_grey, c_ltgrey, c_ltgrey, false);
-	draw_set_halign(fa_center);
 	draw_rectangle_colour(0, room_height, room_width, room_height - 150, c_ltgrey, c_ltgrey, c_grey, c_grey, false);
+	//health bars
+	draw_rectangle_colour(150, 250, 450 , 250+20, c_grey, c_grey, c_grey, c_grey, false);
+	draw_rectangle_colour(152, 252, 148 + 3*health, 250+18,c_lime, c_lime, c_green, c_green, false);
+	draw_rectangle_colour(900, 170, 1200 , 170+20, c_grey, c_grey, c_grey, c_grey, false);
+	draw_rectangle_colour(902, 172, 898 + 3*health, 170+18,c_lime, c_lime, c_green, c_green, false);
 }

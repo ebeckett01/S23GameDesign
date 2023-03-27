@@ -20,3 +20,4 @@ hiding = false;
 
 //control values for user input
 global.wasd = true;
+

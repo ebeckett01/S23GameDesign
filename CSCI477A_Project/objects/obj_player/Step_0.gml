@@ -71,6 +71,24 @@ if(global.game_state == game_states.PLAYING){
 			on_platform = false;
 		}
 	}
+	
+	//check enemy collision for attacks
+	var inst = instance_place(x+hsp, y+ vsp, obj_enemy);
+	if (inst != noone) {
+		//going to hit a block with feet in next frame
+	
+		while( instance_place(x, y+ sign(vsp), obj_enemy) == noone) {
+			y += sign(vsp);
+		}
+		inst = instance_place(x, y+ sign(vsp), obj_enemy);
+		hsp = 0;
+		vsp = 0;
+		if (attack){
+			instance_destroy(inst);
+		}
+	}
+
+		
 	//hiding logic
 	hiding = false;
 	if (place_meeting(x, y+1, obj_hideable)&&keydown) {
