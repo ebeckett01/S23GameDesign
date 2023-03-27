@@ -30,3 +30,12 @@ if (global.game_state == game_states.PAUSED){
 		}
 	}
 }
+if (global.game_state == game_states.COMBAT){
+	draw_sprite_ext(spr_player_idle, 1, 300, 450, 3.5, 3.5, 0, c_white, 1);
+	draw_sprite_ext(spr_temp_enemy, 1, 1050, 350 , -3.5, 3.5, 0, c_white, 1);
+	// Menu bar along the top and bottom
+	draw_set_halign(fa_center);
+	draw_rectangle_colour(0, 0, room_width, 150, c_grey, c_grey, c_ltgrey, c_ltgrey, false);
+	draw_set_halign(fa_center);
+	draw_rectangle_colour(0, room_height, room_width, room_height - 150, c_ltgrey, c_ltgrey, c_grey, c_grey, false);
+}
