@@ -49,11 +49,12 @@ if(global.game_state == game_states.PLAYING){
 	vsp += grv;
 	//jumping
 	if (on_platform && jumping){
-		alarm[0] = room_speed/40;
-		on_platform = false;   
+		// Moved on platform = false to alarm[0]
+		// Prevent from reading on_platform after jump has happened
+		alarm[0] = room_speed/40;  
 	}else if(doubleJump && jumping){
-		alarm[0] = room_speed/40;
 		doubleJump= false;
+		alarm[0] = room_speed/40;
 	}
 	//check vertical collision with a block
 	var inst = instance_place(x, y+ vsp, obj_platform);
