@@ -22,7 +22,7 @@ if(global.game_state == game_states.PLAYING){
 		sprite_index = spr_temp_enemy_attention;
 	}else{
 		sprite_index = spr_temp_enemy;
-		alarm[1] = 0.5*room_speed;
+		alarm[1]++;
 	}
 }else{
 	alarm[0]++;

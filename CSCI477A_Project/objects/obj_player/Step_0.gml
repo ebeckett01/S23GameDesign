@@ -23,6 +23,7 @@ var dash_key =keyboard_check(vk_shift);
 
 // Movement variables
 var move = keyright-keyleft;
+
 if(global.game_state == game_states.PLAYING){
 	image_speed =1;
 	// Set initial horizontal movement value
@@ -32,7 +33,7 @@ if(global.game_state == game_states.PLAYING){
 		hsp = 2*move*spd;
 	}
 
-
+	
 	// Collision logic
 
 	//check horizontal collision with a block
@@ -72,21 +73,38 @@ if(global.game_state == game_states.PLAYING){
 		}
 	}
 	
-	//check enemy collision for attacks
-	var inst = instance_place(x+hsp, y+ vsp, obj_enemy);
+	//check vertical enemy collision
+	var inst = instance_place(x, y+ vsp, obj_enemy);
 	if (inst != noone) {
-		//going to hit a block with feet in next frame
 	
 		while( instance_place(x, y+ sign(vsp), obj_enemy) == noone) {
 			y += sign(vsp);
 		}
-		inst = instance_place(x, y+ sign(vsp), obj_enemy);
-		hsp = 0;
+		touch_inst  = instance_place(x, y+ sign(vsp), obj_enemy);
 		vsp = 0;
-		if (attack){
-			instance_destroy(inst);
+		//kill the enemy if you attacked
+		touching = true;
+	}else if (vsp !=0 ){
+		touching = false;
 		}
+	//check horizontal enemy collision
+	var inst = instance_place(x + hsp, y, obj_enemy);
+	if (inst != noone) {
+	
+		while( instance_place(x+ sign(hsp), y, obj_enemy) == noone) {
+			y += sign(hsp);
+		}
+		touch_inst = instance_place(x+ sign(hsp), y, obj_enemy);
+		hsp = 0;
+		touching = true;
+	}else if (hsp !=0 ){
+		touching = false;
 	}
+	//kill the enemy if you attacked
+	if (attack && touching){
+			instance_destroy(touch_inst);
+			audio_play_sound(snd_debug,10,false);
+		}
 
 		
 	//hiding logic

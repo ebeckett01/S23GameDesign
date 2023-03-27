@@ -1,0 +1,20 @@
+﻿For this delivery, we have a partially completed game. So far in our backlog we have completed:
+* Movement with both arrow keys and wasd
+* Dash and double jump movement
+* Level design of a tutorial
+* Enemies that can detect when the player is in view and bring the player into combat
+* Bushes that the player can hide in
+* A pause menu where you can toggle the controls 
+* A splash screen menu
+Currently in progress from the most recent sprint:
+* Adding attacking and blocking mechanics that complete the combat
+* Attacking enemies without triggering combat via stealth
+What we still need to complete:
+* An end to the game with a boss to defeat
+* A polished sprite for the enemies and boss
+* Story elements added to the game
+
+
+Some bugs we currently have in the program:
+* The button to toggle wasd or arrow keys does not always work
+* The player can fall off the map to the left of the tutorial

@@ -60,6 +60,7 @@
     {"id":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},"order":2,},
     {"id":{"name":"fnt_tutorial","path":"fonts/fnt_tutorial/fnt_tutorial.yy",},"order":1,},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"order":1,},
+    {"id":{"name":"snd_debug","path":"sounds/snd_debug/snd_debug.yy",},"order":0,},
     {"id":{"name":"spr_temp_enemy","path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",},"order":6,},
     {"id":{"name":"obj_hideable_bush","path":"objects/obj_hideable_bush/obj_hideable_bush.yy",},"order":6,},
     {"id":{"name":"obj_splash_screen_controller","path":"objects/obj_splash_screen_controller/obj_splash_screen_controller.yy",},"order":8,},

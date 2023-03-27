@@ -21,3 +21,5 @@ hiding = false;
 //control values for user input
 global.wasd = true;
 
+//touching an enemy
+touching=false;
