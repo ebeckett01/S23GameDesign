@@ -23,3 +23,6 @@ global.wasd = true;
 
 //touching an enemy
 touching=false;
+
+//attack in combat
+global.player_atk = 10;

@@ -13,3 +13,22 @@ if(mouse_check_button_pressed(mb_left) &&
 if(global.game_state != game_states.PAUSED && room == rm_combat){
 	global.game_state = game_states.COMBAT;
 }
+//combat controls
+if(global.game_state == game_states.COMBAT){
+	//is attack button pressed
+	if(mouse_check_button_pressed(mb_left) &&
+	point_in_rectangle(mouse_x,mouse_y,20, 15, room_width/2 - 20 , 135)){
+	   if(player_turn){
+		   enemy_health -= global.player_atk + irandom_range(-global.player_atk /4,global.player_atk /2);
+		   player_turn = false;
+		   alarm[0] = room_speed*1;
+		}
+	}
+	//if enemy killed
+	if(enemy_health <= 0){
+		room_goto(global.prev_room);
+		game_load("level.dat");
+		global.battle_won = true;
+		
+	}
+}
