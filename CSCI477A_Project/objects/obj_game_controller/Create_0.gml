@@ -14,6 +14,6 @@ global.enemy_atk = 7;
 global.battle_won = false;
 global.battle_lost = false;
 
-health = 100;
+global.health = 100;
 enemy_health = 100;
 player_turn = true;
