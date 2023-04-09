@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "TileSet2",
   "spriteId": {
-    "name": "spr_tile_set_background",
-    "path": "sprites/spr_tile_set_background/spr_tile_set_background.yy",
+    "name": "spr_tile_set_mountain_clouds",
+    "path": "sprites/spr_tile_set_mountain_clouds/spr_tile_set_mountain_clouds.yy",
   },
   "tileWidth": 64,
   "tileHeight": 64,
