@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 draw_set_font(fnt_tutorial);
-draw_set_color(c_black);
+draw_set_color(c_red);
 var t = global.tutorial_text_mod;
 
 // Draw Left - Right prompt
