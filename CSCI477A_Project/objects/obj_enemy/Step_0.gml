@@ -24,9 +24,9 @@ if(global.game_state == game_states.PLAYING){
 		image_xscale = -1;
 	}
 	if (attention) {
-		sprite_index = spr_temp_enemy_attention;
+		sprite_index = enemy_atten;
 	}else{
-		sprite_index = spr_temp_enemy;
+		sprite_index = enemy_idle;
 		alarm[1] = room_speed*0.5;
 	}
 }else{
