@@ -5,15 +5,16 @@
 
 // Inherit the parent event
 event_inherited();
-button_text = "ATTACK";
+button_text = "FLEE";
 // Modify what the button does when clicked
 button_clicked = function(){
 	// Code for what you want the button to do
-	global.attack_pressed = true;
+	game_load("level.dat");
+	room_goto(global.prev_room);
 }
 
 // Mpdify what the button does when mouse hovers over it
 button_hovering = function(){
 	// Code for what you want the button to do	
-	global.attack_pressed = false;
+
 }

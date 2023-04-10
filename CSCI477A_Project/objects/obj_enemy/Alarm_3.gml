@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy(self);
+if (global.battle_won) {
+	instance_destroy(self);
+}

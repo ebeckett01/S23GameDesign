@@ -32,8 +32,5 @@ if (global.game_state == game_states.COMBAT){
 	draw_rectangle_colour(152, 352, 148 + 3*global.health, 350+18,c_lime, c_lime, c_green, c_green, false);
 	draw_rectangle_colour(900, 170, 1200 , 170+20, c_grey, c_grey, c_grey, c_grey, false);
 	draw_rectangle_colour(902, 172, 898 + 3*enemy_health, 170+18,c_lime, c_lime, c_green, c_green, false);
-	//attack button
-	draw_rectangle_colour(20, 135, room_width/2 - 20 , 15, c_green, c_green, c_green, c_green, false);
-	//defend button
-	draw_rectangle_colour(room_width - 20, 135, room_width/2 + 20 , 15, c_green, c_green, c_green, c_green, false);
+	
 }
