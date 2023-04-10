@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if (global.game_state == game_states.PLAYING){
+	//draw GUI box
+	draw_set_halign(fa_center);
+	draw_rectangle_colour(0, 0, camera_get_view_width(view_camera[0]),40, c_grey, c_grey, c_grey, c_grey, false);
+	//score text
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_center);
+	draw_text_transformed_colour(20, 20, "SCORE: " + string(score), 1, 1, 0, c_white, c_white, c_white, c_white, 1);
+	
+}
 if (global.game_state == game_states.PAUSED){
 	draw_set_alpha(0.5);
 	draw_rectangle_colour(0, 0, camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]), c_black, c_black, c_black, c_black, false);
@@ -21,6 +30,7 @@ if (global.game_state == game_states.PAUSED){
 	if(global.wasd){
 		draw_sprite(spr_checkmark,0,14,5);
 	}
+	
 }
 if (global.game_state == game_states.COMBAT){
 	draw_sprite_ext(spr_player_idle, 1, 300, 550, 3.5, 3.5, 0, c_white, 1);
