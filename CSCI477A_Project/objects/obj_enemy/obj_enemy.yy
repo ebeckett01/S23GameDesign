@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_enemy",
   "spriteId": {
-    "name": "spr_enemy_idle",
-    "path": "sprites/spr_enemy_idle/spr_enemy_idle.yy",
+    "name": "spr_enemy_attention",
+    "path": "sprites/spr_enemy_attention/spr_enemy_attention.yy",
   },
   "solid": false,
   "visible": true,

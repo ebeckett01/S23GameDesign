@@ -9,8 +9,9 @@ button_text = "FLEE";
 // Modify what the button does when clicked
 button_clicked = function(){
 	// Code for what you want the button to do
-	room_goto(global.prev_room);
 	global.load_prev =true;
+	global.battle_won = false;
+	room_goto(global.prev_room);
 }
 
 // Mpdify what the button does when mouse hovers over it

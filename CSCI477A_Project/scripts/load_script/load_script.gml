@@ -5,7 +5,7 @@ function load_script(){
 		x =global.saveX;
 		y =global.saveY;
 	}
-	if(global.destroy_obj != pointer_null){
+	if(global.destroy_obj != pointer_null && global.battle_won){
 		with(global.destroy_obj){
 			instance_destroy(self);	
 		}
