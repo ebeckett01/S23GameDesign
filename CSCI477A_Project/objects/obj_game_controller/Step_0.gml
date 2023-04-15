@@ -24,9 +24,11 @@ if(global.game_state == game_states.COMBAT){
 	}
 	//if enemy killed
 	if(enemy_health <= 0){
-		game_load("level.dat");
+		save_script();
+		//game_load("level.dat");
 		global.battle_won = true;
-		room_goto(global.prev_room);
-		
+		global.load_prev =true;
+		//audio_play_sound(snd_debug, 10, false);
+		room_goto(global.prev_room);	
 	}
 }

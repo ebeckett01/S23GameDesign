@@ -34,7 +34,7 @@ if (global.game_state == game_states.PAUSED){
 }
 if (global.game_state == game_states.COMBAT){
 	draw_sprite_ext(spr_player_idle, 1, 300, 550, 3.5, 3.5, 0, c_white, 1);
-	draw_sprite_ext(spr_temp_enemy, 1, 1050, 350 , -3.5, 3.5, 0, c_white, 1);
+	draw_sprite_ext(spr_enemy_attention, 1, 1050, 350 , -3.5, 3.5, 0, c_white, 1);
 	// Menu bar along the top and bottom
 	draw_rectangle_colour(0, 0, room_width, 150, c_grey, c_grey, c_ltgrey, c_ltgrey, false);
 	//health bars

@@ -9,8 +9,8 @@ button_text = "FLEE";
 // Modify what the button does when clicked
 button_clicked = function(){
 	// Code for what you want the button to do
-	game_load("level.dat");
 	room_goto(global.prev_room);
+	global.load_prev =true;
 }
 
 // Mpdify what the button does when mouse hovers over it

@@ -23,7 +23,10 @@ var dash_key =keyboard_check(vk_shift);
 
 // Movement variables
 var move = keyright-keyleft;
-
+if(global.load_prev){
+	load_script();
+	global.load_prev = false;
+}
 if(global.game_state == game_states.PLAYING){
 	image_speed =1;
 	// Set initial horizontal movement value

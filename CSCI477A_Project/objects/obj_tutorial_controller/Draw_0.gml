@@ -4,7 +4,6 @@
 draw_set_font(fnt_tutorial);
 draw_set_color(c_red);
 var t = global.tutorial_text_mod;
-
 // Draw Left - Right prompt
 if (global.wasd) {
 	draw_text(t+100,1500,"Press A to go left or D to go right");

@@ -32,6 +32,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_54C70CAE","properties":[],"isDnd":false,"objectId":{"name":"obj_hideable_bush","path":"objects/obj_hideable_bush/obj_hideable_bush.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":1824.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2A23B70E","properties":[],"isDnd":false,"objectId":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":1280.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_434E1767","properties":[],"isDnd":false,"objectId":{"name":"obj_tutorial_controller","path":"objects/obj_tutorial_controller/obj_tutorial_controller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":1280.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6044F4F4","properties":[],"isDnd":false,"objectId":{"name":"obj_persitance_vars","path":"objects/obj_persitance_vars/obj_persitance_vars.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":1280.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Blockers","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_293ACFE2","properties":[],"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":79.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2528.0,"y":1888.0,},
@@ -146,6 +147,7 @@
     {"name":"inst_2A23B70E","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_434E1767","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_6333B8A9","path":"rooms/rm_tutorial/rm_tutorial.yy",},
+    {"name":"inst_6044F4F4","path":"rooms/rm_tutorial/rm_tutorial.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
