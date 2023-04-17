@@ -19,7 +19,7 @@ if(!global.wasd){
 
 // Non-changing key binds
 var attack = keyboard_check(vk_space);
-var dash_key =keyboard_check(vk_shift);
+var dash_key = keyboard_check(vk_shift);
 
 // Movement variables
 var move = keyright-keyleft;
