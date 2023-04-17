@@ -4,6 +4,14 @@ var keyleft;
 var keyright;
 var keydown;
 var jumping;
+//Rendering code
+if(r>=10){
+	r=0;
+	render();
+}else{
+	r++;
+}
+render();
 // Determines whether to use wasd or <^>
 if(!global.wasd){
 	keyleft = keyboard_check(vk_left);
