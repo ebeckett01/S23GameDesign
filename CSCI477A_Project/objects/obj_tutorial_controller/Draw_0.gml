@@ -36,3 +36,6 @@ if (global.wasd) {
 
 // Draw Attack prompt
 draw_text(t+2700,1700,"Attack enemies from behind\nusing Space");
+
+// Draw Next Level prompt
+draw_text(t+4350,1600,"Head to the next level by reaching the right side of the screen");
