@@ -16,6 +16,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"rm_city","order":6,"path":"rooms/rm_city/rm_city.yy",},
     {"name":"spr_splash_screen","order":8,"path":"sprites/spr_splash_screen/spr_splash_screen.yy",},
     {"name":"spr_castle_brick","order":18,"path":"sprites/spr_castle_brick/spr_castle_brick.yy",},
     {"name":"rm_combat","order":4,"path":"rooms/rm_combat/rm_combat.yy",},
@@ -61,6 +62,7 @@
     {"name":"obj_splash_screen_controller","order":8,"path":"objects/obj_splash_screen_controller/obj_splash_screen_controller.yy",},
     {"name":"spr_tile_set","order":9,"path":"sprites/spr_tile_set/spr_tile_set.yy",},
     {"name":"obj_tutorial_controller","order":9,"path":"objects/obj_tutorial_controller/obj_tutorial_controller.yy",},
+    {"name":"obj_complete_level","order":16,"path":"objects/obj_complete_level/obj_complete_level.yy",},
     {"name":"obj_platform_brick","order":4,"path":"objects/obj_platform_brick/obj_platform_brick.yy",},
   ],
 }

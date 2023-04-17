@@ -34,6 +34,7 @@
   },
   "resources": [
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
+    {"id":{"name":"rm_city","path":"rooms/rm_city/rm_city.yy",},},
     {"id":{"name":"spr_splash_screen","path":"sprites/spr_splash_screen/spr_splash_screen.yy",},},
     {"id":{"name":"spr_castle_brick","path":"sprites/spr_castle_brick/spr_castle_brick.yy",},},
     {"id":{"name":"rm_combat","path":"rooms/rm_combat/rm_combat.yy",},},
@@ -84,11 +85,13 @@
     {"id":{"name":"obj_splash_screen_controller","path":"objects/obj_splash_screen_controller/obj_splash_screen_controller.yy",},},
     {"id":{"name":"spr_tile_set","path":"sprites/spr_tile_set/spr_tile_set.yy",},},
     {"id":{"name":"obj_tutorial_controller","path":"objects/obj_tutorial_controller/obj_tutorial_controller.yy",},},
+    {"id":{"name":"obj_complete_level","path":"objects/obj_complete_level/obj_complete_level.yy",},},
     {"id":{"name":"obj_platform_brick","path":"objects/obj_platform_brick/obj_platform_brick.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
     {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
+    {"roomId":{"name":"rm_city","path":"rooms/rm_city/rm_city.yy",},},
     {"roomId":{"name":"rm_test_level_1","path":"rooms/rm_test_level_1/rm_test_level_1.yy",},},
     {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
     {"roomId":{"name":"rm_combat","path":"rooms/rm_combat/rm_combat.yy",},},
