@@ -32,6 +32,7 @@
     {"name":"spr_button","order":19,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"spr_enemy_attention","order":20,"path":"sprites/spr_enemy_attention/spr_enemy_attention.yy",},
     {"name":"fnt_button","order":2,"path":"fonts/fnt_button/fnt_button.yy",},
+    {"name":"obj_hideable_barrel","order":17,"path":"objects/obj_hideable_barrel/obj_hideable_barrel.yy",},
     {"name":"obj_button_parent","order":10,"path":"objects/obj_button_parent/obj_button_parent.yy",},
     {"name":"obj_enemy","order":7,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"obj_button_flee","order":13,"path":"objects/obj_button_flee/obj_button_flee.yy",},

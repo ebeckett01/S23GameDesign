@@ -50,6 +50,7 @@
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_enemy_attention","path":"sprites/spr_enemy_attention/spr_enemy_attention.yy",},},
     {"id":{"name":"fnt_button","path":"fonts/fnt_button/fnt_button.yy",},},
+    {"id":{"name":"obj_hideable_barrel","path":"objects/obj_hideable_barrel/obj_hideable_barrel.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"sprite_mv_script","path":"scripts/sprite_mv_script/sprite_mv_script.yy",},},
