@@ -28,7 +28,7 @@ if(global.game_state == game_states.COMBAT){
 		//game_load("level.dat");
 		global.battle_won = true;
 		global.load_prev =true;
-		//audio_play_sound(snd_debug, 10, false);
+		global.game_state = game_states.PLAYING;
 		room_goto(global.prev_room);	
 	}
 }

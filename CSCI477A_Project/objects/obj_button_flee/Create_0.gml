@@ -9,8 +9,10 @@ button_text = "FLEE";
 // Modify what the button does when clicked
 button_clicked = function(){
 	// Code for what you want the button to do
-	global.load_prev =true;
 	global.battle_won = false;
+	global.load_prev =true;
+	global.game_state = game_states.PLAYING;
+	global.canspot = false;
 	room_goto(global.prev_room);
 }
 

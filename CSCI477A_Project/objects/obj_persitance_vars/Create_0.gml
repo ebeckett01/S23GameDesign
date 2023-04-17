@@ -10,3 +10,5 @@ global.startY =-1;
 
 global.destroy_obj = pointer_null;
 global.battle_won = false;
+
+global.canspot = true;

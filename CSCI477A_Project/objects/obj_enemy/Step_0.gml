@@ -10,7 +10,7 @@ if(global.game_state == game_states.PLAYING && in_view(self)){
 	//player_dist = point_distance(x,y,obj_player.x,obj_player.y);
 	//is enemy looking at player and player is close enough
 	//is something in the way of the enemy seeing you
-	if (!obj_player.hiding &&
+	if (!obj_player.hiding && global.canspot &&
 		(dir> 0 && collision_line(x,y,x-view_dist,y, obj_player, false, false)) ||
 		(dir< 0 && collision_line(x,y,x+view_dist,y, obj_player, false, false))) {
 		attention = true;
@@ -32,4 +32,5 @@ if(global.game_state == game_states.PLAYING && in_view(self)){
 }else{
 	alarm[0]++;
 	alarm[1]++;
+	alarm[3]++;
 }
