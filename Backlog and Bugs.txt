@@ -1,21 +1,31 @@
-﻿For this delivery, we have a partially completed game. So far in our backlog we have completed:
+For this delivery, we have a partially completed game. So far in our backlog we have completed:
 * Movement with both arrow keys and wasd
 * Dash and double jump movement
 * Level design of a tutorial
+* Level design of second level
 * Enemies that can detect when the player is in view and bring the player into combat
-* Combat where the player and enemy can attack eachother
+* Combat where the player and enemy can attack each-other
+* Health that carries over from battle
 * Bushes that the player can hide in
 * A pause menu where you can toggle the controls 
 * A splash screen menu
+* Polished enemy/player sprites
+* Buttons for combat instead of being hard-coded
+* Score mechanic if you win in combat
+
 Currently in progress from the most recent sprint:
-* Adding blocking mechanics that complete the combat
+* Adding vials that let you regain health
+
 What we still need to complete:
 * An end to the game with a boss to defeat
-* A polished sprite for the enemies and boss
+* A boss sprite
 * Story elements added to the game
 
 
 Some bugs we currently have in the program:
-* The game freezes if you attempt to attack an enemy while dashing
-* The player can fall off the map to the left of the tutorial
-* Enemy doesn't always die after losing combat
+* Enemies respawn in room after combat (persistent room / reset state after combat)
+
+Want to have tested
+* Weird edge cases for movement
+* Fun factor of combat
+
