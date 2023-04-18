@@ -79,6 +79,7 @@
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"snd_debug","path":"sounds/snd_debug/snd_debug.yy",},},
     {"id":{"name":"render","path":"scripts/render/render.yy",},},
+    {"id":{"name":"spr_heal","path":"sprites/spr_heal/spr_heal.yy",},},
     {"id":{"name":"in_view","path":"scripts/in_view/in_view.yy",},},
     {"id":{"name":"obj_button_attack","path":"objects/obj_button_attack/obj_button_attack.yy",},},
     {"id":{"name":"spr_temp_enemy","path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",},},

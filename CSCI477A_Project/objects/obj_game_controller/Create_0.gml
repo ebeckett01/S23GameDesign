@@ -19,4 +19,8 @@ player_turn = true;
 player_offset = 0;
 enemy_offset = 0;
 
+healing = false;
+
 score = 0;
+
+alarm[3] = -1;

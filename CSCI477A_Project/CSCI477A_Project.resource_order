@@ -56,6 +56,7 @@
     {"name":"fnt_tutorial","order":1,"path":"fonts/fnt_tutorial/fnt_tutorial.yy",},
     {"name":"obj_platform","order":1,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"render","order":4,"path":"scripts/render/render.yy",},
+    {"name":"spr_heal","order":24,"path":"sprites/spr_heal/spr_heal.yy",},
     {"name":"in_view","order":3,"path":"scripts/in_view/in_view.yy",},
     {"name":"obj_button_attack","order":12,"path":"objects/obj_button_attack/obj_button_attack.yy",},
     {"name":"spr_temp_enemy","order":6,"path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",},
