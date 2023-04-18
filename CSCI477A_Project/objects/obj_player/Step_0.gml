@@ -29,6 +29,11 @@ if(!global.wasd){
 var attack = keyboard_check(vk_space);
 var dash_key = keyboard_check(vk_shift);
 
+//don't allow dashing while attacking
+if (attack && dash_key){
+	dash_key = false;
+}
+
 // Movement variables
 var move = keyright-keyleft;
 if(global.load_prev){
@@ -104,7 +109,7 @@ if(global.game_state == game_states.PLAYING){
 	if (inst != noone) {
 	
 		while( instance_place(x+ sign(hsp), y, obj_enemy) == noone) {
-			y += sign(hsp);
+			x += sign(hsp);
 		}
 		touch_inst = instance_place(x+ sign(hsp), y, obj_enemy);
 		hsp = 0;
