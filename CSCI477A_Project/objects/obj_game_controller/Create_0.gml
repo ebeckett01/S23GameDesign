@@ -16,4 +16,7 @@ global.attack_pressed = false;
 enemy_health = 100;
 player_turn = true;
 
+player_offset = 0;
+enemy_offset = 0;
+
 score = 0;

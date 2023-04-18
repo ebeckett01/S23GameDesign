@@ -120,7 +120,6 @@ if(global.game_state == game_states.PLAYING){
 	//kill the enemy if you attacked
 	if (touching && attack ){
 			instance_destroy(touch_inst);
-			audio_play_sound(snd_debug,10,false);
 		}
 
 		

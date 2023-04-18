@@ -7,7 +7,10 @@ if (global.game_state == game_states.PLAYING){
 	//score text
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_center);
-	draw_text_transformed_colour(20, 20, "SCORE: " + string(score), 1, 1, 0, c_white, c_white, c_white, c_white, 1);
+	draw_text_transformed_colour((camera_get_view_width(view_camera[0])/2+20), 20, "SCORE: " + string(score), 1, 1, 0, c_white, c_white, c_white, c_white, 1);
+	
+	draw_sprite_ext(spr_player_idle, 2, (camera_get_view_width(view_camera[0])/2-120), 20, 0.5, 0.5, 0, c_white, 1);
+	draw_text((camera_get_view_width(view_camera[0])/2-90), 20, string(global.lives) + "/3");
 	
 }
 if (global.game_state == game_states.PAUSED){
@@ -33,8 +36,8 @@ if (global.game_state == game_states.PAUSED){
 	
 }
 if (global.game_state == game_states.COMBAT){
-	draw_sprite_ext(spr_player_idle, 1, 300, 550, 3.5, 3.5, 0, c_white, 1);
-	draw_sprite_ext(spr_enemy_attention, 1, 1050, 350 , 3.5, 3.5, 0, c_white, 1);
+	draw_sprite_ext(spr_player_idle, 1, 300+player_offset, 550, 3.5, 3.5, 0, c_white, 1);
+	draw_sprite_ext(spr_enemy_attention, 1, 1050-enemy_offset, 350 , 3.5, 3.5, 0, c_white, 1);
 	// Menu bar along the top and bottom
 	draw_rectangle_colour(0, 0, room_width, 150, c_grey, c_grey, c_ltgrey, c_ltgrey, false);
 	//health bars

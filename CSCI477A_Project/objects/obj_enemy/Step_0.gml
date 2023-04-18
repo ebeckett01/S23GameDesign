@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var view_dist = 150;
+var view_dist = 400;
 var wait_time = 0.75;
 
 if(global.game_state == game_states.PLAYING && in_view(self)){

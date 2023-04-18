@@ -2,6 +2,7 @@
 // You can write your code in this editor
 global.load_prev = false;
 global.health = 100;
+global.lives = 3;
 
 global.saveX = -1;
 global.saveY = -1;
