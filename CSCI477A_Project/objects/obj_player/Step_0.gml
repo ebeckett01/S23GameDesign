@@ -49,7 +49,15 @@ if(global.game_state == game_states.PLAYING){
 		hsp = 2*move*spd;
 	}
 
-	
+	//check if fallen off map
+	if (y > 2000){
+		with(obj_player){
+		x =256;
+		y =1792;
+		global.lives--;
+		global.health = 100;
+		}
+	}
 	// Collision logic
 
 	//check horizontal collision with a block

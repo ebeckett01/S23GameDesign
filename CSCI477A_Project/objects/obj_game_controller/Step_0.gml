@@ -36,6 +36,7 @@ if(global.game_state == game_states.COMBAT){
 	if(global.health <= 0){
 		global.battle_won = false;
 		global.lives--;
+		global.health = 100;
 		global.load_prev =true;
 		global.saveX = 256;
 		global.saveY = 1792;
