@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 var view_dist = 400;
-var wait_time = 0.75;
+var wait_time = 0.5;
 
 if(global.game_state == game_states.PLAYING && in_view(self)){
 	//get player direction
@@ -11,9 +11,13 @@ if(global.game_state == game_states.PLAYING && in_view(self)){
 	//is enemy looking at player and player is close enough
 	//is something in the way of the enemy seeing you
 	if (!obj_player.hiding && global.canspot &&
-		(dir> 0 && collision_line(x,y,x-view_dist,y, obj_player, false, false)) ||
-		(dir< 0 && collision_line(x,y,x+view_dist,y, obj_player, false, false))) {
-		attention = true;
+		!collision_line(x,y,obj_player.x,obj_player.y, obj_platform, false, false) 
+		&&  point_distance(x,y,obj_player.x,obj_player.y) <= view_dist ) {
+			if ((abs(point_direction(x,y,obj_player.x,obj_player.y)-180)<90&&dir>0)
+			|| ((point_direction(x,y,obj_player.x,obj_player.y)+90 mod 360)<180&&dir<0)) {
+				attention = true;
+			}
+			
 	}else{
 		attention = false;
 	}
