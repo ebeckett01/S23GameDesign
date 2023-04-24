@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-var view_dist = 400;
 var wait_time = 0.5;
 
 if(global.game_state == game_states.PLAYING && in_view(self)){
@@ -21,7 +20,6 @@ if(global.game_state == game_states.PLAYING && in_view(self)){
 	}else{
 		attention = false;
 	}
-
 	if (dir > 0) {
 		image_xscale = 1;
 	}else{

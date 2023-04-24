@@ -72,6 +72,7 @@
     {"id":{"name":"obj_persitance_vars","path":"objects/obj_persitance_vars/obj_persitance_vars.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
+    {"id":{"name":"draw_vision_cone","path":"scripts/draw_vision_cone/draw_vision_cone.yy",},},
     {"id":{"name":"obj_hideable","path":"objects/obj_hideable/obj_hideable.yy",},},
     {"id":{"name":"spr_temp_player_grounded","path":"sprites/spr_temp_player_grounded/spr_temp_player_grounded.yy",},},
     {"id":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},

@@ -50,6 +50,7 @@
     {"name":"obj_persitance_vars","order":14,"path":"objects/obj_persitance_vars/obj_persitance_vars.yy",},
     {"name":"rm_test","order":1,"path":"rooms/rm_test/rm_test.yy",},
     {"name":"spr_enemy_idle","order":21,"path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},
+    {"name":"draw_vision_cone","order":5,"path":"scripts/draw_vision_cone/draw_vision_cone.yy",},
     {"name":"obj_hideable","order":5,"path":"objects/obj_hideable/obj_hideable.yy",},
     {"name":"spr_temp_player_grounded","order":5,"path":"sprites/spr_temp_player_grounded/spr_temp_player_grounded.yy",},
     {"name":"rm_title_screen","order":2,"path":"rooms/rm_title_screen/rm_title_screen.yy",},

@@ -8,7 +8,7 @@ global.saveX = -1;
 global.saveY = -1;
 global.startX =-1;
 global.startY =-1;
-
+global.cur_score =0;
 global.destroy_obj = pointer_null;
 global.battle_won = false;
 
