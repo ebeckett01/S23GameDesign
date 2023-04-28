@@ -70,6 +70,7 @@
     {"name":"spr_tile_set","order":9,"path":"sprites/spr_tile_set/spr_tile_set.yy",},
     {"name":"obj_tutorial_controller","order":9,"path":"objects/obj_tutorial_controller/obj_tutorial_controller.yy",},
     {"name":"obj_complete_level","order":16,"path":"objects/obj_complete_level/obj_complete_level.yy",},
+    {"name":"spr_point","order":25,"path":"sprites/spr_point/spr_point.yy",},
     {"name":"obj_platform_brick","order":4,"path":"objects/obj_platform_brick/obj_platform_brick.yy",},
   ],
 }

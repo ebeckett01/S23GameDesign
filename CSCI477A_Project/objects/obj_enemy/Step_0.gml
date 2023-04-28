@@ -10,6 +10,7 @@ if(global.game_state == game_states.PLAYING && in_view(self)){
 	//is enemy looking at player and player is close enough
 	//is something in the way of the enemy seeing you
 	if (!obj_player.hiding && global.canspot &&
+		y-obj_player.y < view_height_cap &&
 		!collision_line(x,y,obj_player.x,obj_player.y, obj_platform, false, false) 
 		&&  point_distance(x,y,obj_player.x,obj_player.y) <= view_dist ) {
 			if ((abs(point_direction(x,y,obj_player.x,obj_player.y)-180)<90&&dir>0)

@@ -6,6 +6,7 @@
 // Inherit the parent event
 event_inherited();
 button_text = "FLEE";
+flee_failed = false;
 // Modify what the button does when clicked
 button_clicked = function(){
 	// Code for what you want the button to do
@@ -26,7 +27,8 @@ button_clicked = function(){
 		with(obj_game_controller){
 			alarm[0] = room_speed*1;
 		}
-		draw_text(1366/2,768/2,"Couldn't get away!");
+		flee_failed = true;
+		alarm[5] = room_speed*1;
 	}
 }
 

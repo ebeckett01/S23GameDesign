@@ -93,6 +93,7 @@
     {"id":{"name":"spr_tile_set","path":"sprites/spr_tile_set/spr_tile_set.yy",},},
     {"id":{"name":"obj_tutorial_controller","path":"objects/obj_tutorial_controller/obj_tutorial_controller.yy",},},
     {"id":{"name":"obj_complete_level","path":"objects/obj_complete_level/obj_complete_level.yy",},},
+    {"id":{"name":"spr_point","path":"sprites/spr_point/spr_point.yy",},},
     {"id":{"name":"obj_platform_brick","path":"objects/obj_platform_brick/obj_platform_brick.yy",},},
   ],
   "RoomOrderNodes": [
