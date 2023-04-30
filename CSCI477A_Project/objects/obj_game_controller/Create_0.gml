@@ -18,7 +18,7 @@ if (room = rm_combat){
 	enemy_health = 150;
 	global.enemy_atk = 10;
 }
-player_turn = true;
+global.player_turn = true;
 
 player_offset = 0;
 enemy_offset = 0;

@@ -10,29 +10,30 @@ flee_failed = false;
 // Modify what the button does when clicked
 button_clicked = function(){
 	// Code for what you want the button to do
-	var hp;
-	with(obj_game_controller){
-		hp =enemy_health;
-	}
-	if(room = rm_combat){
-		var temp = irandom_range(1,hp);
-	}else{
-		var temp = 50;
-	}
-	if(temp < 10){		
-		global.battle_won = false;
-		global.load_prev =true;
-		global.game_state = game_states.PLAYING;
-		global.canspot = false;
-		room_goto(global.prev_room);
-	}else{
-		player_turn = false;
-		player_turn = false;
+	if(global.player_turn){
+		var hp;
 		with(obj_game_controller){
-			alarm[0] = room_speed*1;
+			hp =enemy_health;
 		}
-		flee_failed = true;
-		alarm[5] = room_speed*1;
+		if(room = rm_combat){
+			var temp = irandom_range(1,hp);
+		}else{
+			var temp = 50;
+		}
+		if(temp < 10){		
+			global.battle_won = false;
+			global.load_prev =true;
+			global.game_state = game_states.PLAYING;
+			global.canspot = false;
+			room_goto(global.prev_room);
+		}else{
+			global.player_turn = false;
+			with(obj_game_controller){
+				alarm[0] = room_speed*1;
+			}
+			flee_failed = true;
+			alarm[5] = room_speed*1;
+		}
 	}
 }
 

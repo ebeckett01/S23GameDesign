@@ -8,7 +8,7 @@ if (choice != 0){
 	global.health =global.health- global.enemy_atk + irandom_range(-global.enemy_atk /4,global.enemy_atk /2);
 	
 	 enemy_offset = 50;
-	 player_turn = true;
+	 global.player_turn = true;
 	 alarm[2] = room_speed*0.25;
 	//alarm[1] = room_speed*0.1;
 }else{
@@ -25,5 +25,5 @@ if (choice != 0){
 		}
 	}
 	healing = true;
-	player_turn = true;
+	global.player_turn = true;
 }

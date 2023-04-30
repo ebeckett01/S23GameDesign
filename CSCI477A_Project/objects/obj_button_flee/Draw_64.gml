@@ -5,8 +5,8 @@
 event_inherited();
 if(flee_failed && room = rm_combat){
 	draw_set_color(c_black);
-	draw_text(1366/2,768/2,"Couldn't get away!");
+	draw_text(1366/2,768/2+50,"Couldn't get away!");
 }else if(flee_failed && room = rm_boss_combat){
 	draw_set_color(c_white);
-	draw_text(1366/2,768/2,"Can't flee from boss!");
+	draw_text(1366/2,768/2+50,"Can't flee from boss!");
 }

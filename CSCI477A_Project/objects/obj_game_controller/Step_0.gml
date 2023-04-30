@@ -15,11 +15,11 @@ if(global.game_state != game_states.PAUSED && (room == rm_combat || room = rm_bo
 //combat controls
 if(global.game_state == game_states.COMBAT){
 	//is attack button pressed
-	if(player_turn){
+	if(global.player_turn){
 		if(global.attack_pressed){
 		   enemy_health -= global.player_atk + irandom_range(-global.player_atk /4,global.player_atk /2);
 		   player_offset = 50;
-		   player_turn = false;
+		   global.player_turn = false;
 		   alarm[2] = room_speed*0.25;
 		   alarm[0] = room_speed*1;
 		}
