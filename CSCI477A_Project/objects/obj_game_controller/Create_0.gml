@@ -15,7 +15,8 @@ global.attack_pressed = false;
 if (room = rm_combat){
 	enemy_health = 100;
 }else{
-	enemy_health = 150;	
+	enemy_health = 150;
+	global.enemy_atk = 10;
 }
 player_turn = true;
 
