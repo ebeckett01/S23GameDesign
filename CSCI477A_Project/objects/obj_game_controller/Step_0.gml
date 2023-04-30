@@ -9,7 +9,7 @@ if(mouse_check_button_pressed(mb_left) &&
 		global.wasd =true;
 	}
 }
-if(global.game_state != game_states.PAUSED && room == rm_combat){
+if(global.game_state != game_states.PAUSED && (room == rm_combat || room = rm_boss_combat)){
 	global.game_state = game_states.COMBAT;
 }
 //combat controls

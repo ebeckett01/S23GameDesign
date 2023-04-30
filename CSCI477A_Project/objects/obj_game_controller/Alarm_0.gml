@@ -12,11 +12,18 @@ if (choice != 0){
 	 alarm[2] = room_speed*0.25;
 	//alarm[1] = room_speed*0.1;
 }else{
-	//heal
-	enemy_health += irandom_range(7,20);
-	healing = true;
-	if (enemy_health >=100){
-		enemy_health =100;
+	//health
+	if(room = rm_combat){
+		enemy_health += irandom_range(7,20);
+		if (enemy_health >=100){
+			enemy_health =100;
+		}
+	}else if (room =rm_boss_combat){
+		enemy_health += irandom_range(4,15);
+		if (enemy_health >=150){
+			enemy_health =150;
+		}
 	}
+	healing = true;
 	player_turn = true;
 }

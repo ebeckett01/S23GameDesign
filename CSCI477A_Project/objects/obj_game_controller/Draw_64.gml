@@ -37,8 +37,12 @@ if (global.game_state == game_states.PAUSED){
 	
 }
 if (global.game_state == game_states.COMBAT){
+	if(room = rm_combat){
+		draw_sprite_ext(spr_enemy_attention, 1, 1050-enemy_offset, 350 , 3.5, 3.5, 0, c_white, 1);
+	}else if(room = rm_boss_combat){
+		draw_sprite_ext(spr_enemy_boss, 1, 1050-boss_offset, 450 , 3.5, 3.5, 0, c_white, 1);
+	}
 	draw_sprite_ext(spr_player_idle, 1, 300+player_offset, 550, 3.5, 3.5, 0, c_white, 1);
-	draw_sprite_ext(spr_enemy_attention, 1, 1050-enemy_offset, 350 , 3.5, 3.5, 0, c_white, 1);
 	if(healing){
 		draw_sprite_ext(spr_heal, 1, 1200 , 170+30 ,1, 1, 0, c_white, 1);
 		if(alarm[3] <= 0){
@@ -51,6 +55,18 @@ if (global.game_state == game_states.COMBAT){
 	draw_rectangle_colour(150, 350, 450 , 350+20, c_grey, c_grey, c_grey, c_grey, false);
 	draw_rectangle_colour(152, 352, 148 + 3*global.health, 350+18,c_lime, c_lime, c_green, c_green, false);
 	draw_rectangle_colour(900, 170, 1200 , 170+20, c_grey, c_grey, c_grey, c_grey, false);
-	draw_rectangle_colour(902, 172, 898 + 3*enemy_health, 170+18,c_lime, c_lime, c_green, c_green, false);
+	if(room = rm_combat){
+		draw_rectangle_colour(902, 172, 898 + 3*enemy_health, 170+18,c_lime, c_lime, c_green, c_green, false);
+	}else if(room = rm_boss_combat){
+		if(enemy_health >100){
+			draw_rectangle_colour(902, 172, 898 + 300, 170+18,c_lime, c_lime, c_green, c_green, false);
+			draw_rectangle_colour(900, 170-20, 1200 , 170-20, c_grey, c_grey, c_grey, c_grey, false);
+			draw_rectangle_colour(902, 172-20, 898 + 6*(enemy_health-100), 170-2,c_lime, c_lime, c_green, c_green, false);
+		}else{
+			draw_rectangle_colour(902, 172, 898 + 3*enemy_health, 170+18,
+								  c_orange, c_orange, c_yellow, c_yellow, false);
+			draw_rectangle_colour(900, 170-20, 1200 , 170-20, c_grey, c_grey, c_grey, c_grey, false);
+		}
+	}
 	
 }

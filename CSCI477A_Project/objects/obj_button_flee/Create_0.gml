@@ -14,7 +14,11 @@ button_clicked = function(){
 	with(obj_game_controller){
 		hp =enemy_health;
 	}
-	var temp = irandom_range(1,hp);
+	if(room = rm_combat){
+		var temp = irandom_range(1,hp);
+	}else{
+		var temp = 50;
+	}
 	if(temp < 10){		
 		global.battle_won = false;
 		global.load_prev =true;

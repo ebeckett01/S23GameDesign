@@ -12,12 +12,16 @@ global.player_atk = 10;
 global.enemy_atk = 7;
 
 global.attack_pressed = false;
-
-enemy_health = 100;
+if (room = rm_combat){
+	enemy_health = 100;
+}else{
+	enemy_health = 150;	
+}
 player_turn = true;
 
 player_offset = 0;
 enemy_offset = 0;
+boss_offset =20;
 
 healing = false;
 

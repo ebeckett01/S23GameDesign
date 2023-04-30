@@ -52,8 +52,13 @@ if(global.game_state == game_states.PLAYING){
 	//check if fallen off map
 	if (y > 2000){
 		with(obj_player){
-		x =256;
-		y =1792;
+		if(room = rm_castle){
+			x= 96;
+			y=704;
+		}else{
+			x =256;
+			y =1792;
+		}
 		global.lives--;
 		global.health = 100;
 		}
