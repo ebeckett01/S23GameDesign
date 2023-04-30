@@ -11,4 +11,5 @@ if (global.wasd) {
 if (player_interact && !used && place_meeting(x, y+1, obj_player)) {
 	global.health = 100;
 	used = true;
+	instance_destroy(self);
 }
