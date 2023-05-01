@@ -3,7 +3,7 @@
 
 //enemy attacks player or heals
 choice = irandom_range(0,4);
-if (choice != 0){
+if (enemy_health > 99 || choice != 0){
 	//attack
 	global.health =global.health- global.enemy_atk + irandom_range(-global.enemy_atk /4,global.enemy_atk /2);
 	
@@ -13,12 +13,12 @@ if (choice != 0){
 	//alarm[1] = room_speed*0.1;
 }else{
 	//health
-	if(room = rm_combat){
+	if(room == rm_combat){
 		enemy_health += irandom_range(7,20);
 		if (enemy_health >=100){
 			enemy_health =100;
 		}
-	}else if (room =rm_boss_combat){
+	}else if (room == rm_boss_combat){
 		enemy_health += irandom_range(4,15);
 		if (enemy_health >=150){
 			enemy_health =150;
