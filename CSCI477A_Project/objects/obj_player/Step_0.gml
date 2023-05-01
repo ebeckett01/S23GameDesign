@@ -114,9 +114,7 @@ if(global.game_state == game_states.PLAYING){
 		vsp = 0;
 		//kill the enemy if you attacked
 		touching = true;
-	}else if (vsp !=0 ){
-		touching = false;
-		}
+	}
 	//check horizontal enemy collision
 	var inst = instance_place(x + hsp, y, obj_enemy);
 	if (inst != noone) {
